@@ -1,12 +1,13 @@
 <?php
 namespace app\api\controller\v1;
 
+use app\api\controller\BaseController;
 use app\api\validate\IdMustValidate;
 use app\api\model\Test as testModel;
 use app\lib\exception\TestException as TestException;
 use think\Request;
 
-class Test
+class Test extends BaseController
 {
     public function test(Request $request)
     {

@@ -12,3 +12,8 @@ use think\Route;
 
 //Route::rule('api/v2/test', 'api/v2.Test/test');
 Route::rule('api/:version/test', 'api/:version.Test/test');
+
+Route::post('api/:version/token', 'api/:version.Token/getToken');
+
+
+Route::get('api/:version/time', 'api/:version.Time/getTime');

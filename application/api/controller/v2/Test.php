@@ -1,5 +1,5 @@
 <?php
-    /**
+ /**
      * Created by PhpStorm.
      * User: Administrator
      * Date: 2018/9/3
@@ -7,12 +7,12 @@
      */
 namespace app\api\controller\v2;
 
-use think\Model;
-
-class Test extends Model
+class Test
 {
     public function test()
     {
+        $a = 1;
+        echo $a;
         echo 1;
     }
 }
