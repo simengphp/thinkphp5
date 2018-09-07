@@ -24,6 +24,7 @@ class BaseController extends Controller
     {
         $headers = Request::instance()->header();
         if (empty($headers['sign'])) {
+            /**我们直接抛出异常，之后会走ExceptionHandler重写render方法进行异常的抛出*/
             throw new SignException();
         }
     }
