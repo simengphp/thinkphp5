@@ -12,6 +12,6 @@ class Behavior
 {
     public function appInit(&$param)
     {
-        echo '我是一个行为';
+        //echo '我是一个行为';
     }
 }
