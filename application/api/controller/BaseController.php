@@ -8,8 +8,7 @@
 
 namespace app\api\controller;
 
-use app\api\validate\IdMustValidate;
-use app\lib\exception\BaseException;
+use app\lib\exception\SignException;
 use think\Controller;
 use think\Request;
 
@@ -25,7 +24,7 @@ class BaseController extends Controller
     {
         $headers = Request::instance()->header();
         if (empty($headers['sign'])) {
-            (new IdMustValidate())->goCheck();
+            throw new SignException();
         }
     }
 }
