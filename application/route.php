@@ -17,3 +17,7 @@ Route::post('api/:version/token', 'api/:version.Token/getToken');
 
 
 Route::get('api/:version/time', 'api/:version.Time/getTime');
+
+
+Route::get('index/test', 'index/Test/test');
+Route::get('index/login', 'index/Test/login');
